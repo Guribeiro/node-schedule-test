@@ -4,7 +4,7 @@ import ScheduleProvider from '../models/ScheduleProvider';
 class NodeScheduleProvider implements ScheduleProvider {
 	public async schedule(date: Date): Promise<void> {
 		const job = scheduleJob(date, () => {
-			console.log('Faltam 2 meses para o vencimento das férias do colaborador ALAN DA SILVA')
+			console.log('Esse log foi disparado 5 segundos após a sua chamada')
 		});
 	  
 		job.nextInvocation();
