@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import vacationRouter from '../modules/vacations/routes/vacations.routes';
+import vacationRouter from '../modules/vacations/http/routes/vacations.routes';
 
 const routes = Router();
 
